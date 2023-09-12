@@ -28,6 +28,7 @@ body{
     grid-area: result;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
   
   h1{
@@ -68,4 +69,10 @@ body{
     height: 30%;
     border-radius: 10px;
     font-size: 1.2em;
+    text-align: center;
+  }
+  .restart:hover{
+    background-color: #5acfcf;
+    color: #000;
+    transform: scale(1.1);
   }
