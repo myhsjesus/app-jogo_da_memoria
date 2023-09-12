@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo da Memória</h1>
+        <div class="result">
+            <h2 id="fim"></h2>
+            <h2 id="acerto">Acertos:<span id="acertos">0</span></h2>
+            <h2 id="erro">Erros:<span id="erros">0</span></h2>
+        </div>
+        <div class="main">
+            <div class="grid"></div>
+        </div>
+        <div class="reiniciar">
+            <button type="button" class="restart" onclick="restart()">Reiniciar</button>
+        </div>
+    </div>
+</body>
+</html>

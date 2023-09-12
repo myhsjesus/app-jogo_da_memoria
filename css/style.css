@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+  }
+body{
+  background-image: url("../img/sunflowers.jpg");
+}
+  
+  .container{
+    display: grid; 
+    grid-template-columns:  1rf 2rf 1rf ;
+    grid-template-rows: repeat(5,150px); 
+    gap: 10px; 
+    grid-template-areas: 'title title title' 
+                         '. result .' 
+                         'aside cartas content' 
+                         'aside cartas content'
+                         'reiniciar reiniciar reiniciar' 
+  
+  }
+  .result{
+    border-radius: 10px;
+    background-color: #3d9191;
+    color: #fff;
+    display: flex;
+    grid-area: result;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1{
+    font-size: 70px;
+    padding-top: 5%;
+    grid-area: title;
+    text-align: center;
+    color: #fff;
+    padding: 2%;
+  }
+  h2{
+    margin: 5%;
+    flex-direction: row;
+  }
+  .main{
+    position: relative;
+    grid-area: cartas;
+    display: flex;
+  }
+  .grid {
+    position: absolute;
+    padding: 10px;
+    justify-content: center;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .reiniciar{
+    grid-area: reiniciar;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .restart{
+    background-color: #3d9191;
+    color: #fff;
+    width: 10%;
+    height: 30%;
+    border-radius: 10px;
+    font-size: 1.2em;
+  }
